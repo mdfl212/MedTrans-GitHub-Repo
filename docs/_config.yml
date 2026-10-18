@@ -4,6 +4,7 @@ theme: minima
 url: https://mdfl212.github.io
 baseurl: /MedTrans-GitHub-Repo
 header_pages:
-  - TUTORIAL.md
+  - tutorial/index.md
 exclude:
   - GITHUB_PUBLISHING.md
+  - TUTORIAL.md
