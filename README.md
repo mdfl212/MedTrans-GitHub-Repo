@@ -8,7 +8,7 @@
 
 ## Start here
 
-1. Read the beginner-friendly [MedTrans tutorial](docs/TUTORIAL.md).
+1. Read the [MedTrans tutorial on GitHub Pages](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) or view [its source](docs/TUTORIAL.md).
 2. Open [`.github/skills/medtrans/SKILL.md`](.github/skills/medtrans/SKILL.md) to understand the complete workflow.
 3. Check [`.github/skills/medtrans/COURSE_MATRIX.md`](.github/skills/medtrans/COURSE_MATRIX.md) and select the correct course code, shell, and palette.
 4. Copy the [universal prompt template](.github/skills/medtrans/PROMPT_TEMPLATE.md), fill in your course and lecture details, and attach your source lecture.
@@ -86,6 +86,10 @@ Example:
 gh release download --repo mdfl212/MedTrans-GitHub-Repo \
   --pattern "MedTrans_VSCode_Copilot_Skill.zip"
 ```
+
+## Online tutorial
+
+Read the published [MedTrans GitHub Pages tutorial](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/). The Pages site is built from `docs/` and deployed by GitHub Actions. To enable it for this repository, open **Settings → Pages** on GitHub and set the build and deployment source to **GitHub Actions**.
 
 ## License and classroom use
 

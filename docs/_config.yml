@@ -1,0 +1,9 @@
+title: MedTrans Tutorial
+description: A beginner's guide to turning medical lecture slides into a source-faithful Word reviewer.
+theme: minima
+url: https://mdfl212.github.io
+baseurl: /MedTrans-GitHub-Repo
+header_pages:
+  - tutorial.md
+exclude:
+  - GITHUB_PUBLISHING.md

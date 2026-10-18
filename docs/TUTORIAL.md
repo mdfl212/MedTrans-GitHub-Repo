@@ -1,4 +1,8 @@
-# MedTrans Tutorial: Turn Lecture Slides into an Editable Reviewer
+---
+title: MedTrans Tutorial: Turn Lecture Slides into an Editable Reviewer
+layout: page
+permalink: /tutorial/
+---
 
 This guide is for students who are new to AI skills. It walks through the entire workflow: prepare the lecture, load MedTrans, generate the Word reviewer, and verify it before sharing.
 
@@ -33,7 +37,7 @@ These are third-party services. Check their current privacy terms and your schoo
 
 ## Step 2 — Load or install the MedTrans skill
 
-Download or clone this repository. The VS Code workspace skill is [`.github/skills/medtrans/`](../.github/skills/medtrans/), and its main instruction file is [`.github/skills/medtrans/SKILL.md`](../.github/skills/medtrans/SKILL.md).
+Download or clone this repository. The VS Code workspace skill is in [`.github/skills/medtrans/`](https://github.com/mdfl212/MedTrans-GitHub-Repo/tree/main/.github/skills/medtrans), and its main instruction file is [`SKILL.md`](https://github.com/mdfl212/MedTrans-GitHub-Repo/blob/main/.github/skills/medtrans/SKILL.md).
 
 ### VS Code / GitHub Copilot
 

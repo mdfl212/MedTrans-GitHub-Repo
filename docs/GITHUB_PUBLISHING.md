@@ -22,6 +22,15 @@ The easiest beginner workflow is to use GitHub Desktop. The repository-ready ZIP
 
 If GitHub Desktop says the folder is not a repository, you may have extracted the source-only ZIP instead of the GitHub Desktop-ready ZIP, or your unzip tool may have omitted the hidden `.git` directory.
 
+## Enable the tutorial website
+
+The `Deploy tutorial to GitHub Pages` workflow builds the Markdown files in `docs/` and deploys the site when changes are pushed to `main`.
+
+1. On GitHub, open the repository's **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push a change to `docs/` on `main`, or run the workflow from the **Actions** tab using **Run workflow**.
+4. Once the workflow succeeds, open `https://mdfl212.github.io/MedTrans-GitHub-Repo/`.
+
 ## Alternative: use the GitHub website
 
 You can create an empty repository at [github.com/new](https://github.com/new), but uploading a multi-folder project through the website can be less convenient. GitHub Desktop or Git is recommended for preserving the directory structure. If creating the repository manually, do not initialize it with an extra README if you plan to push this existing project as-is; otherwise you may need to reconcile the two histories.
