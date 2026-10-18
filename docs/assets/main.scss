@@ -92,3 +92,37 @@
 .medtrans-tutorial-download p {
   margin: 0.25rem 0;
 }
+
+
+.medtrans-prompt {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.25rem;
+  border: 2px solid #176b72;
+  border-radius: 0.75rem;
+  background: #eef8f7;
+  box-shadow: 0 3px 12px rgba(23, 107, 114, 0.08);
+}
+
+.medtrans-prompt-label {
+  margin: 0 0 0.75rem;
+  color: #155b62;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.medtrans-prompt pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid #c6e4e0;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #172b2b;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.medtrans-prompt code {
+  color: inherit;
+  font-size: 0.97rem;
+}
