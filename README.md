@@ -1,98 +1,115 @@
-# MedTrans: Medical Lecture-to-Reviewer Toolkit (MD201–MD207)
-DOWNLOAD HERE:➡️[![Latest release](https://img.shields.io/github/v/release/mdfl212/MedTrans-GitHub-Repo?label=latest%20release)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
+# MedTrans — Medical Lecture-to-Reviewer Toolkit
 
-**Turn lecture PDFs and slides into editable, source-faithful Word reviewers.** MedTrans is a reusable, cross-platform AI skill and document workflow for medical students. It includes the skill instructions, course shells, palettes, helper scripts, QA guidance, and a beginner tutorial.
+[![Latest release](https://img.shields.io/github/v/release/mdfl212/MedTrans-GitHub-Repo?label=download)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
+![Courses](https://img.shields.io/badge/courses-MD201%E2%80%93MD207-176b72)
+![Status](https://img.shields.io/badge/status-beta-f59e0b)
 
-> **Status: beta.** The workflow is configured for MD201–MD207. MD205 is the best-tested visual reference; the first reviewer generated for another course still needs its own source-content and page-layout audit. Lecturer and mnemonic strips are experimental (WIP).
+**Turn medical lecture slides into structured, editable Word reviewers.**
+
+MedTrans is a reusable AI skill and document workflow for medical students. It provides course-matched Word shells, palettes, prompt templates, quality-check guidance, and a beginner tutorial.
+
+> **Beta status:** MD201–MD207 are configured. MD205 is the best-tested visual reference; the first reviewer for another course still needs its own source-content and page-layout audit. Lecturer and mnemonic strips are experimental.
 
 ## Start here
 
-1. Read the [MedTrans tutorial on GitHub Pages](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) or view [its source](docs/TUTORIAL.md).
-2. Open [`.github/skills/medtrans/SKILL.md`](.github/skills/medtrans/SKILL.md) to understand the complete workflow.
-3. Check [`.github/skills/medtrans/COURSE_MATRIX.md`](.github/skills/medtrans/COURSE_MATRIX.md) and select the correct course code, shell, and palette.
-4. Copy the [universal prompt template](.github/skills/medtrans/PROMPT_TEMPLATE.md), fill in your course and lecture details, and attach your source lecture.
-5. Inspect the final Word document against the original slides before sharing it.
+<div align="center">
 
-## Course configuration
+### New to MedTrans? Follow these three steps.
 
-The package contains course shells and palette entries for:
+**1. Read the tutorial** → **2. Download the skill** → **3. Attach your lecture and prompt the AI**
 
-- **MD201** — Foundations of a 5-Star Physician
-- **MD202** — Community & Family Medicine
-- **MD203** — Microbiology & Parasitology
-- **MD204** — Pediatrics
-- **MD205** — Obstetrics
-- **MD206** — IM / Pathology
-- **MD207** — Pharmacology
+[**Open the beginner tutorial**](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) · [**Get the latest release**](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest) · [Browse the source files](https://github.com/mdfl212/MedTrans-GitHub-Repo/tree/main/.github/skills/medtrans)
 
-These are the configured labels in the package. Confirm the official course title against your syllabus before generating a reviewer.
+</div>
 
-## Repository contents
+### Quick start
+
+1. **Prepare your lecture.** Use a searchable/OCR-processed PDF when appropriate, but keep the original PDF for checking figures, tables, and OCR errors.
+2. **Load MedTrans.** On a compatible platform, install the skill; otherwise, upload the relevant skill files and ask the AI to read `SKILL.md`.
+3. **Generate the reviewer.** Attach your lecture, specify the course code, use the prompt template, and ask the AI to follow the matching shell and palette.
+4. **Check before sharing.** Verify clinical details, figures, table reconstructions, answer rationales, layout, and page breaks against the original lecture.
+
+## Courses
+
+| Code | Configured subject | Palette |
+|---|---|---|
+| MD201 | Foundations of a 5-Star Physician | Dark green + gold |
+| MD202 | Community & Family Medicine | Terracotta + gold |
+| MD203 | Microbiology & Parasitology | Green |
+| MD204 | Pediatrics | Blue + orange |
+| MD205 | Obstetrics | Pink |
+| MD206 | IM / Pathology | Violet + red |
+| MD207 | Pharmacology | Teal + coral |
+
+These are the labels configured in the package. Confirm the official course title against your syllabus.
+
+## What the toolkit includes
+
+- Cross-platform `SKILL.md` and course-selection guidance
+- Seven matching Word shells and a centralized palette file
+- Reusable prompt templates and classroom quick-start notes
+- Optional JavaScript helpers for building DOCX files in compatible Node.js environments
+- MD205 visual references and QA addendum
+- A beginner-friendly tutorial and GitHub Pages site
+
+## Key rules
+
+- **The lecture is the content authority.** Preserve its terminology, clinical qualifiers, numerical values, and scientific meaning.
+- **OCR is not infallible.** Check clinical numbers, abbreviations, tables, and figures against the original slides.
+- **Use the correct course configuration.** Select the matching course code, Word shell, and palette.
+- **Keep structured content structured.** Reconstruct tables as native editable Word tables wherever feasible.
+- **Inspect the output.** Render and review the finished DOCX page by page; disclose any QA steps that could not be completed.
+- **Share responsibly.** Follow your institution’s rules and confirm redistribution permission for lecture materials, shells, and visual references.
+
+## Repository map
 
 ```text
 .
 ├── README.md
+├── SKILL.md                         # Convenient top-level copy
+├── .github/
+│   ├── skills/medtrans/             # Complete VS Code / Copilot skill
+│   │   ├── SKILL.md
+│   │   ├── COURSE_MATRIX.md
+│   │   ├── PROMPT_TEMPLATE.md
+│   │   ├── scripts/
+│   │   ├── assets/shells/            # MD201–MD207 Word shells
+│   │   ├── references/
+│   │   └── visual_reference/
+│   └── workflows/                   # Pages and release workflows
 ├── docs/
-│   ├── index.md               # GitHub Pages landing page and download link
-│   ├── TUTORIAL.md            # Beginner step-by-step guide
-│   ├── _config.yml            # GitHub Pages / Jekyll settings
-│   └── assets/main.scss       # Site styling
-└── .github/
-    └── skills/
-        └── medtrans/          # VS Code / GitHub Copilot skill package
-            ├── SKILL.md       # Main skill instructions
-            ├── COURSE_MATRIX.md
-            ├── PROMPT_TEMPLATE.md
-            ├── scripts/       # Palettes and optional DOCX builders
-            ├── assets/        # MD201–MD207 Word shells
-            └── references/
+│   ├── index.md                     # Website landing page
+│   ├── TUTORIAL.md                  # Step-by-step guide
+│   └── assets/main.scss             # Site styling
+└── Releases/                        # Packaged classroom downloads
 ```
 
-## Important rules
+## Download and install
 
-- The **current lecture is the content authority**. Do not silently omit, correct, or supplement its medical claims.
-- OCR output can be wrong. Keep and consult the original slide PDF, especially for clinical numbers, tables, figures, abbreviations, and qualifiers.
-- Use only the shell and palette matching the specified course code.
-- Reconstruct source tables as native Word tables wherever feasible.
-- Render and inspect the output, and disclose any QA steps that were not possible.
-- Do not distribute lecture recordings, transcripts, or course materials unless permitted by your institution and instructor.
+**Recommended:** open the [latest GitHub Release](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest) and download the MedTrans skill ZIP.
 
-## Using MedTrans across AI tools
+For VS Code, you can also open this repository as a workspace. The full skill lives at [`.github/skills/medtrans/`](https://github.com/mdfl212/MedTrans-GitHub-Repo/tree/main/.github/skills/medtrans). To install it for your user account on Windows, copy that folder to:
 
-The skill is in VS Code's workspace skill location at `.github/skills/medtrans/`. Open this repository in VS Code to use it as a workspace skill. Other assistants may support different skill locations or import flows; follow their current documentation and keep the complete `medtrans/` folder together.
-
-## Script requirements
-
-The optional helper scripts require Node.js and the `docx` package. They are not required if the AI environment can create and edit DOCX files through other tools. The skill instructions take priority over assumptions about a particular platform or runtime.
-
-## Download and release assets
-
-Download the latest repository source as a [ZIP archive](https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip), or browse packaged downloads on the [GitHub Releases page](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest). Tagged releases may also include a VS Code / GitHub Copilot skill ZIP.
-
-### Install the skill in VS Code / GitHub Copilot
-
-**Workspace install:** download the repository ZIP from GitHub, extract it, then open the extracted repository folder in VS Code. The skill is located at `.github/skills/medtrans/SKILL.md`.
-
-**Personal install from the source ZIP:**
-
-1. [Download the latest MedTrans source ZIP](https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip) and extract it.
-2. Copy `.github/skills/medtrans` from the extracted folder into `%USERPROFILE%\.copilot\skills\medtrans`, creating the `skills` directory if needed. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`.
-3. Restart VS Code or start a new Copilot chat so it can discover the skill.
-
-Keep `SKILL.md`, `scripts/`, `assets/`, and `references/` together inside the `medtrans` folder.
-
-Example:
-
-```bash
-# Download the latest source ZIP
-curl -L -o MedTrans-source.zip \
-  https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip
+```text
+%USERPROFILE%\.copilot\skills\medtrans
 ```
 
-## Online tutorial
+Keep `SKILL.md`, `scripts/`, `assets/`, and `references/` together inside the `medtrans` folder. Restart VS Code or begin a new Copilot chat after installing it.
 
-Read the published [MedTrans GitHub Pages tutorial](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/). The Pages site is built from the `docs/` folder on the `main` branch. In the repository's **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/docs`.
+Other AI platforms have different skill uploaders and file-generation capabilities. See the [beginner tutorial](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) for platform-specific guidance and fallback instructions. Uploading a ZIP to an ordinary chat does not automatically install a persistent skill.
 
-## License and classroom use
+## Optional build scripts
 
-No open-source license has been selected for this repository yet. Public visibility alone does not grant permission to redistribute or modify copyrighted materials. Before publishing broadly, the maintainer should choose a license and confirm that the Word shells, images, and other included assets are appropriate to share.
+The JavaScript helper scripts require Node.js and the `docx` package. They are optional: an assistant with other suitable Word-document tools may follow the same skill rules without running the scripts. Do not claim the script-based build ran unless it actually did.
+
+## Validation status
+
+The workflow is configured for MD201–MD207, but that does not mean every course has undergone full end-to-end validation. MD205 is the primary tested reference. Validate each new course’s content and rendered layout before distributing the output. Lecturer and mnemonic strips remain beta/WIP.
+
+## License and permissions
+
+No open-source license has been selected. Until a license is added, do not assume that public visibility grants permission to reuse or redistribute the repository’s assets. Confirm that you have permission to share the Word shells, visual references, and any included teaching materials before public distribution.
+
+---
+
+**Useful links:** [Tutorial](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) · [Latest release](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest) · [Skill files](https://github.com/mdfl212/MedTrans-GitHub-Repo/tree/main/.github/skills/medtrans) · [Report a problem](https://github.com/mdfl212/MedTrans-GitHub-Repo/issues/new)
