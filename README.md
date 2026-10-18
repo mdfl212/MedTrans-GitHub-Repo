@@ -1,6 +1,5 @@
 # MedTrans: Medical Lecture-to-Reviewer Toolkit (MD201–MD207)
-
-[![Latest release](https://img.shields.io/github/v/release/mdfl212/MedTrans-GitHub-Repo?label=latest%20release)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
+DOWNLOAD HERE:➡️[![Latest release](https://img.shields.io/github/v/release/mdfl212/MedTrans-GitHub-Repo?label=latest%20release)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
 
 **Turn lecture PDFs and slides into editable, source-faithful Word reviewers.** MedTrans is a reusable, cross-platform AI skill and document workflow for medical students. It includes the skill instructions, course shells, palettes, helper scripts, QA guidance, and a beginner tutorial.
 
