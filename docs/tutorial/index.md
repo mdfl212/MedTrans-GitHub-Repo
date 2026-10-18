@@ -36,6 +36,8 @@ A **skill** is a reusable set of instructions that helps an AI follow the same w
 
 **[Download the MedTrans skill package](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/download/init/MedTrans_v1.5.0.zip)**
 
+Prefer watching a video? [Watch my earlier MedTrans skill tutorial on YouTube](https://youtu.be/8d1QEsNEGH4).
+
 Choose the AI assistant you want to use. Menus can look a little different depending on your account.
 
 ### Grok
@@ -45,6 +47,11 @@ Choose the AI assistant you want to use. Menus can look a little different depen
 3. Upload the MedTrans ZIP you downloaded and enable it.
 4. In the chat, type `/medtrans` if the skill command is available.
 
+<figure class="medtrans-demo-figure">
+  <img src="{{ '/assets/tutorial-media/grok-skill-setup.webp' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Grok" loading="lazy">
+  <figcaption>Example setup in Grok. Your menu may look a little different.</figcaption>
+</figure>
+
 ### Claude
 
 1. Open **Settings** or **Customize**, then find **Skills**.
@@ -52,11 +59,21 @@ Choose the AI assistant you want to use. Menus can look a little different depen
 3. Upload the MedTrans ZIP and enable it.
 4. In the chat, type `/medtrans` if available. Otherwise, simply tell Claude to use the MedTrans skill.
 
+<figure class="medtrans-demo-figure">
+  <img src="{{ '/assets/tutorial-media/claude-skill-setup.webp' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Claude" loading="lazy">
+  <figcaption>Example setup in Claude. Available options can vary by account.</figcaption>
+</figure>
+
 ### ChatGPT
 
 If your ChatGPT account has a **Skills** feature, open it and use the option to add or upload a skill.
 
 If you are using a regular chat without that feature, attach the MedTrans package and ask ChatGPT to follow it. If it cannot read the ZIP, extract it and attach `SKILL.md` plus the shell and palette for your course. Uploading files into a regular chat does not permanently install a skill.
+
+<figure class="medtrans-demo-figure">
+  <img src="{{ '/assets/tutorial-media/chatgpt-skill-setup.webp' | relative_url }}" alt="Animated example showing the MedTrans package being added in ChatGPT" loading="lazy">
+  <figcaption>Example using ChatGPT. The exact interface depends on which features your account has.</figcaption>
+</figure>
 
 ### Another AI assistant?
 
@@ -69,19 +86,14 @@ Attach your **OCR-processed PDF** to the AI chat. Keep the original PDF availabl
 ### ⭐ COPY THIS PROMPT
 
 <div class="medtrans-prompt">
-  <p class="medtrans-prompt-label">Copy the text below, change the course details, and send it to your AI.</p>
-  <pre><code>Use the MedTrans skill to make a Word reviewer from the lecture I attached.
-
-Course: MD205 — Obstetrics
-
-Keep the lecture's full content and scientific meaning. Rebuild tables as editable Word tables and follow the correct course template.
-
-Before creating the file, ask me which figures I want included.</code></pre>
+  <p class="medtrans-prompt-label">Copy this, change the course, and send it to your AI:</p>
+  <pre><code>Make a DOCX of this lecture using the MedTrans skill.
+Subject: MD205 OB.</code></pre>
 </div>
 
-**That is enough to get started.** You do not need to write a long or technical prompt. MedTrans contains the detailed formatting instructions.
+**That's all you need to type to get started.** Change `MD205 OB` to your own course. The skill contains the detailed instructions, so you do not need to write a long prompt.
 
-Change MD205 — Obstetrics to your own course. Choose the code that matches your class: MD201, MD202, MD203, MD204, MD205, MD206, or MD207.
+The AI should ask which figures you want before it starts making the document. You can answer in plain language, such as “include all important figures,” “include slides 3 and 5,” or “no figures.”
 
 ### When the AI asks about figures
 
@@ -96,6 +108,11 @@ If you already know which figures you want, you can put that choice directly in 
 ## Step 4 — Wait for the reviewer
 
 After you send the prompt and answer the figure question, let the AI work. It may take a while because the reviewer can include tables, figures, exam questions, rationales, and a landscape reference section.
+
+<figure class="medtrans-demo-figure">
+  <img src="{{ '/assets/tutorial-media/finished-reviewer-demo.webp' | relative_url }}" alt="Animated preview of a finished MedTrans reviewer made with Grok" loading="lazy">
+  <figcaption>Example of a finished reviewer. Your own document will depend on the lecture and AI platform you use.</figcaption>
+</figure>
 
 The expected MedTrans reviewer includes:
 
