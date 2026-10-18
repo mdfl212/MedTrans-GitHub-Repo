@@ -184,3 +184,14 @@
   color: inherit;
   font-size: 1rem;
 }
+
+
+.medtrans-demo-figure video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+  background: #111;
+}

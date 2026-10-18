@@ -48,8 +48,11 @@ Choose the AI assistant you want to use. Menus can look a little different depen
 4. In the chat, type `/medtrans` if the skill command is available.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/tutorial/tutorial-media/easy-to-use/grok-skill-setup-original.gif' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Grok" loading="lazy">
-  <figcaption>Example setup in Grok. Your menu may look a little different.</figcaption>
+  <video class="medtrans-demo-video" controls playsinline preload="metadata" aria-label="Screen recording showing how to add and enable the MedTrans skill in Grok.">
+    <source src="{{ '/tutorial/tutorial-media/videos/grok-setup.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video. You can <a href="{{ '/tutorial/tutorial-media/videos/grok-setup.mp4' | relative_url }}">open the video directly</a>.
+  </video>
+  <figcaption>Screen recording showing how to add and enable the MedTrans skill in Grok. Your menu may look a little different.</figcaption>
 </figure>
 
 ### Claude
@@ -60,8 +63,11 @@ Choose the AI assistant you want to use. Menus can look a little different depen
 4. In the chat, type `/medtrans` if available. Otherwise, simply tell Claude to use the MedTrans skill.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/tutorial/tutorial-media/easy-to-use/claude-skill-setup-original.gif' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Claude" loading="lazy">
-  <figcaption>Example setup in Claude. Available options can vary by account.</figcaption>
+  <video class="medtrans-demo-video" controls playsinline preload="metadata" aria-label="Screen recording showing how to add and enable the MedTrans skill in Claude.">
+    <source src="{{ '/tutorial/tutorial-media/videos/claude-setup.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video. You can <a href="{{ '/tutorial/tutorial-media/videos/claude-setup.mp4' | relative_url }}">open the video directly</a>.
+  </video>
+  <figcaption>Screen recording showing how to add and enable the MedTrans skill in Claude. Available options can vary by account.</figcaption>
 </figure>
 
 ### ChatGPT
@@ -71,8 +77,11 @@ If your ChatGPT account has a **Skills** feature, open it and use the option to 
 If you are using a regular chat without that feature, attach the MedTrans package and ask ChatGPT to follow it. If it cannot read the ZIP, extract it and attach `SKILL.md` plus the shell and palette for your course. Uploading files into a regular chat does not permanently install a skill.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/tutorial/tutorial-media/easy-to-use/chatgpt-skill-setup-original.gif' | relative_url }}" alt="Animated example showing the MedTrans package being added in ChatGPT" loading="lazy">
-  <figcaption>Example using ChatGPT. The exact interface depends on which features your account has.</figcaption>
+  <video class="medtrans-demo-video" controls playsinline preload="metadata" aria-label="Screen recording showing the MedTrans setup process in ChatGPT.">
+    <source src="{{ '/tutorial/tutorial-media/videos/chatgpt-setup.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video. You can <a href="{{ '/tutorial/tutorial-media/videos/chatgpt-setup.mp4' | relative_url }}">open the video directly</a>.
+  </video>
+  <figcaption>Screen recording showing the MedTrans setup process in ChatGPT. The exact interface depends on which features your account has.</figcaption>
 </figure>
 
 ### Another AI assistant?
