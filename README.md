@@ -1,5 +1,7 @@
 # MedTrans: Medical Lecture-to-Reviewer Toolkit (MD201–MD207)
 
+[![Latest release](https://img.shields.io/github/v/release/mdfl212/MedTrans-GitHub-Repo?label=latest%20release)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
+
 **Turn lecture PDFs and slides into editable, source-faithful Word reviewers.** MedTrans is a reusable, cross-platform AI skill and document workflow for medical students. It includes the skill instructions, course shells, palettes, helper scripts, QA guidance, and a beginner tutorial.
 
 > **Status: beta.** The workflow is configured for MD201–MD207. MD205 is the best-tested visual reference; the first reviewer generated for another course still needs its own source-content and page-layout audit. Lecturer and mnemonic strips are experimental (WIP).
@@ -60,6 +62,22 @@ The skill is written in Markdown, but platforms handle skills differently. Suppo
 ## Script requirements
 
 The optional helper scripts require Node.js and the `docx` package. They are not required if the AI environment can create and edit DOCX files through other tools. The skill instructions take priority over assumptions about a particular platform or runtime.
+
+## Download and release assets
+
+The published classroom package is available in the GitHub Releases page for this repository.
+
+- Open the repository's Releases page on GitHub
+- Download the latest ZIP asset from the release
+- The file is stored in the repository's `Releases/` folder and attached to the corresponding GitHub release
+
+Example:
+
+```bash
+# Download the latest release asset with GitHub CLI
+gh release list
+gh release download --pattern "*.zip" --repo <owner>/<repo>
+```
 
 ## License and classroom use
 
