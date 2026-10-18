@@ -1,0 +1,12 @@
+# Generated lecture-specific outputs
+output/
+outputs/
+*.generated.docx
+*_reviewer.docx
+*_reviewer.pdf
+
+# Local and OS artifacts
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
