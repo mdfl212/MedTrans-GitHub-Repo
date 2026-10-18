@@ -33,7 +33,10 @@ These are the configured labels in the package. Confirm the official course titl
 .
 ├── README.md
 ├── docs/
-│   └── TUTORIAL.md            # Beginner step-by-step guide
+│   ├── index.md               # GitHub Pages landing page and download link
+│   ├── TUTORIAL.md            # Beginner step-by-step guide
+│   ├── _config.yml            # GitHub Pages / Jekyll settings
+│   └── assets/main.scss       # Site styling
 └── .github/
     └── skills/
         └── medtrans/          # VS Code / GitHub Copilot skill package
@@ -64,16 +67,16 @@ The optional helper scripts require Node.js and the `docx` package. They are not
 
 ## Download and release assets
 
-Download the latest release from the [GitHub Releases page](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest). The release workflow attaches the classroom kit and a VS Code / GitHub Copilot installable skill ZIP when a version tag is published.
+Download the latest repository source as a [ZIP archive](https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip), or browse packaged downloads on the [GitHub Releases page](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest). Tagged releases may also include a VS Code / GitHub Copilot skill ZIP.
 
 ### Install the skill in VS Code / GitHub Copilot
 
 **Workspace install:** download the repository ZIP from GitHub, extract it, then open the extracted repository folder in VS Code. The skill is located at `.github/skills/medtrans/SKILL.md`.
 
-**Personal install from a release ZIP:**
+**Personal install from the source ZIP:**
 
-1. Download [`MedTrans_VSCode_Copilot_Skill.zip`](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest/download/MedTrans_VSCode_Copilot_Skill.zip) from the latest release and extract it.
-2. Copy the extracted `medtrans` folder into `%USERPROFILE%\.copilot\skills\`, creating the `skills` directory if needed. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`.
+1. [Download the latest MedTrans source ZIP](https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip) and extract it.
+2. Copy `.github/skills/medtrans` from the extracted folder into `%USERPROFILE%\.copilot\skills\medtrans`, creating the `skills` directory if needed. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`.
 3. Restart VS Code or start a new Copilot chat so it can discover the skill.
 
 Keep `SKILL.md`, `scripts/`, `assets/`, and `references/` together inside the `medtrans` folder.
@@ -81,9 +84,9 @@ Keep `SKILL.md`, `scripts/`, `assets/`, and `references/` together inside the `m
 Example:
 
 ```bash
-# Download the installable skill ZIP with GitHub CLI
-gh release download --repo mdfl212/MedTrans-GitHub-Repo \
-  --pattern "MedTrans_VSCode_Copilot_Skill.zip"
+# Download the latest source ZIP
+curl -L -o MedTrans-source.zip \
+  https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip
 ```
 
 ## Online tutorial

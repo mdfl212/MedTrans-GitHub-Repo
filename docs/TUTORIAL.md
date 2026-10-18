@@ -6,6 +6,11 @@ permalink: /tutorial/
 
 This guide is for students who are new to AI skills. It walks through the entire workflow: prepare the lecture, load MedTrans, generate the Word reviewer, and verify it before sharing.
 
+<div class="medtrans-tutorial-download">
+  <p><strong>Get MedTrans:</strong> download the latest source ZIP, or browse the classroom packages in GitHub Releases.</p>
+  <p><a href="https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip">Download MedTrans source ZIP</a> | <a href="https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest">View all releases</a></p>
+</div>
+
 ## What is MedTrans?
 
 MedTrans is a reusable AI skill and workflow for turning medical lecture slides into structured, editable Word reviewers. Its instructions, Word shells, color palettes, examples, and QA checklist help an AI follow the same workflow across different lectures.
@@ -43,7 +48,7 @@ Download or clone this repository. The VS Code workspace skill is in [`.github/s
 
 To use MedTrans in this repository, open the extracted repository folder in VS Code; Copilot discovers the workspace skill at `.github/skills/medtrans/`.
 
-To install it for your user account, download `MedTrans_VSCode_Copilot_Skill.zip` from the [latest GitHub release](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest), extract it, and copy the contained `medtrans` folder to `%USERPROFILE%\.copilot\skills\`. Create the `skills` folder if it does not exist. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`. Restart VS Code or start a new Copilot chat after installation.
+To install it for your user account, [download the MedTrans source ZIP](https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip), extract it, and copy the `.github/skills/medtrans` folder to `%USERPROFILE%\.copilot\skills\medtrans`. Create the `skills` folder if it does not exist. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`. Restart VS Code or start a new Copilot chat after installation.
 
 ### Grok
 

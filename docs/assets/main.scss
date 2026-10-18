@@ -1,0 +1,94 @@
+---
+---
+
+@import "minima";
+
+.medtrans-hero {
+  margin: 1.5rem 0 2.5rem;
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px solid #d8e4ef;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #f0f7fc 0%, #f8fbfd 60%, #e8f3f5 100%);
+}
+
+.medtrans-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #176b72;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.medtrans-hero h1 {
+  max-width: 17ch;
+  margin-bottom: 1rem;
+  color: #17324d;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  line-height: 1.08;
+}
+
+.medtrans-lead {
+  max-width: 44rem;
+  color: #43596d;
+  font-size: 1.15rem;
+}
+
+.medtrans-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.medtrans-button {
+  display: inline-block;
+  padding: 0.75rem 1.1rem;
+  border: 2px solid #176b72;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.medtrans-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.medtrans-button-primary {
+  background: #176b72;
+  color: #fff;
+}
+
+.medtrans-button-primary:visited,
+.medtrans-button-primary:hover {
+  color: #fff;
+}
+
+.medtrans-button-secondary {
+  background: #fff;
+  color: #155b62;
+}
+
+.medtrans-button-secondary:visited,
+.medtrans-button-secondary:hover {
+  color: #155b62;
+}
+
+.medtrans-release-link {
+  margin: 0;
+  color: #526679;
+  font-size: 0.92rem;
+}
+
+.medtrans-tutorial-download {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #176b72;
+  border-radius: 0.35rem;
+  background: #f0f7fc;
+}
+
+.medtrans-tutorial-download p {
+  margin: 0.25rem 0;
+}
