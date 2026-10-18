@@ -57,7 +57,7 @@ These are the configured labels in the package. Confirm the official course titl
 
 ## Using MedTrans across AI tools
 
-The skill is written in Markdown, but platforms handle skills differently. Supported skill-loader environments may import the `medtrans/` folder as a skill. If a platform has no skill installer, upload `medtrans/SKILL.md`, `COURSE_MATRIX.md`, the matching shell, the palette, and any relevant QA reference, then explicitly ask the assistant to follow them. Uploading a ZIP into an ordinary chat is not the same as permanently installing a skill.
+The skill is written in Markdown, but platforms handle skills differently. Supported skill-loader environments may import the `medtrans/` folder as a skill. If a platform has no skill installer, upload the ZIP into an ordinary chat (though it is not the same as **permanently** installing a skill).
 
 ## Script requirements
 
