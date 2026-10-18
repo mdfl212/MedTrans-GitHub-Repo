@@ -1,5 +1,5 @@
 ---
-title: MedTrans Tutorial: Turn Lecture Slides into an Editable Reviewer
+title: "MedTrans Tutorial: Turn Lecture Slides into an Editable Reviewer"
 layout: page
 permalink: /tutorial/
 ---
