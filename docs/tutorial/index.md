@@ -3,208 +3,158 @@ title: "MedTrans Tutorial: Turn Lecture Slides into an Editable Reviewer"
 layout: page
 ---
 
+This guide is for **absolute beginners**. You do not need to know how to code. Just follow the steps in order.
 
-This guide is for students who are new to AI skills. It walks through the entire workflow: prepare the lecture, load MedTrans, generate the Word reviewer, and verify it before sharing.
+## The whole process
 
-<div class="medtrans-tutorial-download">
-  <p><strong>Get MedTrans:</strong> download the latest source ZIP, or browse the classroom packages in GitHub Releases.</p>
-  <p><a href="https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip">Download MedTrans source ZIP</a> | <a href="https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest">View all releases</a></p>
-</div>
-
-## What is MedTrans?
-
-MedTrans is a reusable AI skill and workflow for turning medical lecture slides into structured, editable Word reviewers. Its instructions, Word shells, color palettes, examples, and QA checklist help an AI follow the same workflow across different lectures.
-
-A **prompt** is an instruction you send in one conversation. A **skill** is a reusable set of instructions and supporting files that a compatible AI platform can load for repeated use. Some platforms have native skill installers; others require you to upload the files and ask the assistant to follow them each time.
+**Prepare your lecture PDF → Load MedTrans → Copy the prompt → Answer the figure question → Check your reviewer.**
 
 ## Step 1 — Prepare your lecture PDF
 
-Start with your professor's lecture slides. They are often shared as a PDF or exported from PowerPoint.
+Start with your professor's lecture slides, usually saved as a PDF.
 
-### Check whether OCR is needed
+### Do I need OCR?
 
-OCR means **Optical Character Recognition**. It detects text inside page images and makes it selectable or searchable.
+OCR turns text in slide images into selectable, searchable text. It can save time and reduce the AI usage spent on reading slides.
 
-1. Open your PDF and try to select a sentence with your cursor.
-2. If you can select and copy the text, the PDF may already contain searchable text; you can usually skip OCR.
-3. If every page behaves like one big picture, or copied text is missing, run OCR.
+1. Open your PDF and try to select and copy a sentence.
+2. If you can select the text, you may skip OCR.
+3. If each page acts like one big picture, or the text cannot be copied properly, run OCR first.
 
-OCR can reduce the time and AI usage spent extracting slide text, leaving more of the workflow for organizing the reviewer. It is not perfect: it can misread medical terms, abbreviations, numbers, superscripts, symbols, and tables.
-
-### Suggested OCR tools
+Recommended tools:
 
 - [MaxAI PDF OCR](https://www.maxai.co/pdf-tools/pdf-ocr/)
 - [PDF24 OCR](https://tools.pdf24.org/en/ocr)
 
-These are third-party services. Check their current privacy terms and your school's rules before uploading any restricted or sensitive material. Download the OCR output, inspect several pages for obvious mistakes, and keep the original PDF for visual comparison.
+Download the OCR-processed PDF and quickly check a few pages. OCR can misread medical terms, numbers, abbreviations, and tables, so **keep the original PDF** too. Use the original slides to check figures, diagrams, and table layout.
 
-**Remember:** an OCR PDF is useful for text extraction, but the original slides remain the visual reference for figures, tables, labels, and layout.
+Only upload lecture materials to third-party services if your school and instructor allow it.
 
-## Step 2 — Load or install the MedTrans skill
+## Step 2 — Load the MedTrans skill
 
-Download or clone this repository. The VS Code workspace skill is in [`.github/skills/medtrans/`](https://github.com/mdfl212/MedTrans-GitHub-Repo/tree/main/.github/skills/medtrans), and its main instruction file is [`SKILL.md`](https://github.com/mdfl212/MedTrans-GitHub-Repo/blob/main/.github/skills/medtrans/SKILL.md).
+A **skill** is a reusable set of instructions that helps an AI follow the same workflow. You do not have to understand all the files inside it.
 
-### VS Code / GitHub Copilot
+**[Download the MedTrans skill package](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/download/init/MedTrans_v1.5.0.zip)**
 
-To use MedTrans in this repository, open the extracted repository folder in VS Code; Copilot discovers the workspace skill at `.github/skills/medtrans/`.
-
-To install it for your user account, [download the MedTrans source ZIP](https://github.com/mdfl212/MedTrans-GitHub-Repo/archive/refs/heads/main.zip), extract it, and copy the `.github/skills/medtrans` folder to `%USERPROFILE%\.copilot\skills\medtrans`. Create the `skills` folder if it does not exist. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`. Restart VS Code or start a new Copilot chat after installation.
+Choose the AI assistant you want to use. Menus can look a little different depending on your account.
 
 ### Grok
 
-If your Grok interface provides a Skills or Plugins area:
-
-1. Open the Skills/Plugins area.
-2. Choose the option to add or upload a skill, if available.
-3. Upload a ZIP containing the `medtrans/` skill folder, then enable it if required.
-4. Start a chat and invoke `/medtrans` only if your interface supports that command.
-
-The exact menus can change and may differ by product surface. If your version has no skill uploader, use the fallback below.
+1. Open **Plugins** or **Skills**.
+2. Choose **Add skills** or the upload option.
+3. Upload the MedTrans ZIP you downloaded and enable it.
+4. In the chat, type `/medtrans` if the skill command is available.
 
 ### Claude
 
-Claude supports uploading custom skills on eligible accounts when its Skills feature and required capabilities are available:
-
-1. Open Claude and go to **Customize → Skills**.
-2. Choose **Create skill → Upload a skill**.
-3. Upload a ZIP containing one top-level `medtrans/` folder with `SKILL.md` and its supporting folders inside.
-4. Enable the skill in your Skills list.
-5. In a chat, ask Claude to use MedTrans for the attached lecture.
-
-See the [official Claude Skills guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude) for the current interface and requirements.
+1. Open **Settings** or **Customize**, then find **Skills**.
+2. Choose the option to add or upload a skill.
+3. Upload the MedTrans ZIP and enable it.
+4. In the chat, type `/medtrans` if available. Otherwise, simply tell Claude to use the MedTrans skill.
 
 ### ChatGPT
 
-ChatGPT's native Skills feature is available only to eligible plans/workspaces and may not appear in every account. If it is available:
+If your ChatGPT account has a **Skills** feature, open it and use the option to add or upload a skill.
 
-1. Open **Plugins → Plugin Directory → Skills**.
-2. Choose the option to create or upload a skill.
-3. Upload the skill ZIP and confirm it appears in your Skills list.
+If you are using a regular chat without that feature, attach the MedTrans package and ask ChatGPT to follow it. If it cannot read the ZIP, extract it and attach `SKILL.md` plus the shell and palette for your course. Uploading files into a regular chat does not permanently install a skill.
 
-See [OpenAI's current Skills documentation](https://help.openai.com/en/articles/20001066-skills-in-chatgpt) for eligibility and setup.
+### Another AI assistant?
 
-**If you do not see a Skills option:** you can still use MedTrans in a normal chat. Upload `SKILL.md`, `COURSE_MATRIX.md`, the correct course shell, the palette file, and the QA addendum if relevant. Then send this instruction:
+You can try another assistant if it can read your files and create Word documents. If it has no skill installer, attach the MedTrans instructions and the matching course files, then ask it to follow them.
 
-> Read the attached MedTrans `SKILL.md` and relevant course references before starting. Follow the skill's rules. Do not claim the skill is permanently installed; use it for this task only.
+## Step 3 — Attach your lecture and copy this prompt
 
-### Gemini or another assistant
+Attach your **OCR-processed PDF** to the AI chat. Keep the original PDF available too, especially if it has clearer diagrams or tables.
 
-Use a native skill uploader if your platform provides one. Otherwise, upload the relevant MedTrans files and explicitly ask the assistant to follow them. Make sure the assistant can create/edit Word documents and inspect rendered pages; capabilities vary by plan and product.
+### ⭐ COPY THIS PROMPT
 
-For the exact current behavior of any platform, check its official help pages. An uploaded ZIP is not automatically a permanent installation in every AI app.
+<div class="medtrans-prompt">
+  <p class="medtrans-prompt-label">Copy the text below, change the course details, and send it to your AI.</p>
+  <pre><code>Use the MedTrans skill to make a Word reviewer from the lecture I attached.
 
-## Step 3 — Upload the lecture and prompt the AI
+Course: MD205 — Obstetrics
 
-Attach your OCR-processed lecture PDF. Keep the original PDF available too, especially if it has clearer figures or tables.
+Keep the lecture's full content and scientific meaning. Rebuild tables as editable Word tables and follow the correct course template.
 
-### Simple prompt for beginners
+Before creating the file, ask me which figures I want included.</code></pre>
+</div>
 
-Copy this prompt and replace the course code and subject:
+**That is enough to get started.** You do not need to write a long or technical prompt. MedTrans contains the detailed formatting instructions.
 
-> **Use the MedTrans skill** to create an editable Word reviewer from the attached lecture.
->
-> **Course code:** MD205  
-> **Subject:** Obstetrics
->
-> Follow the matching course shell and color palette. Preserve the lecture's full content and scientific meaning. Reconstruct structured content as native, editable Word tables wherever feasible.
->
-> Create one continuous two-column reviewer, include clinically important figures and tables, add a 20-item PLE/USMLE-style examination with answers and rationales, and finish with a landscape master-reference section.
->
-> Before delivering the files, check the layout and content against the original lecture. Clearly report any checks you could not complete.
+Change MD205 — Obstetrics to your own course. Choose the code that matches your class: MD201, MD202, MD203, MD204, MD205, MD206, or MD207.
 
-### If you want to choose specific figures or tables
+### When the AI asks about figures
 
-Use this version instead:
+Reply with whichever option you prefer. For example:
 
-> Use the MedTrans skill to create my reviewer from the attached lecture.
->
-> **Course code:** [MD201–MD207]  
-> **Subject:** [Your subject]
->
-> Preserve the lecture's complete content and scientific meaning. Use the correct course shell and palette. Reconstruct tables as editable Word tables wherever feasible.
->
-> **Figures and tables to include:** [List slide numbers or figure/table titles here.]
->
-> If I do not specify figures, ask whether I want all clinically important figures, selected figures only, or a text-focused reviewer without embedded figures.
->
-> Include exactly 20 board-style questions with answers and rationales, plus a landscape master-reference section. Inspect the rendered pages before delivering the reviewer and identify any unresolved problems.
+- **Specific figures:** “Include figures from slides 3, 5, and 9.”
+- **All important figures:** “Include all clinically important figures and diagrams.”
+- **No figures:** “Do not embed figures; keep the reviewer text-focused.”
 
-The simple prompt is a good starting point. The second prompt gives you more control.
+If you already know which figures you want, you can put that choice directly in the prompt. The skill should ask before generating the document if your preference is unclear.
 
-## Step 4 — Optional: Add mnemonics and lecturer comments
+## Step 4 — Wait for the reviewer
 
-MedTrans includes an experimental option for separate strips containing teaching aids. These are **beta/WIP features**, so inspect them carefully.
+After you send the prompt and answer the figure question, let the AI work. It may take a while because the reviewer can include tables, figures, exam questions, rationales, and a landscape reference section.
 
-- **Mnemonic strip:** concise memory aids or recall cues added by the AI.
-- **Lecturer strip:** relevant professor comments supported by a transcript.
+The expected MedTrans reviewer includes:
 
-These strips are not automatically part of every reviewer. Ask for them explicitly if you want them.
+- A continuous two-column Word reviewer
+- Reconstructed, editable tables wherever feasible
+- A 20-question board-style exam with answers and rationales
+- A landscape master-reference section
 
-### Adding lecturer comments from a transcript
+The finished file should be an editable **.docx**. Some AI assistants may also provide a PDF preview.
 
-If you have a recording, use an audio-transcription tool separately. Gemini may be an option if audio upload is available in your account; other tools may also work. You do not need to send the entire audio to the same AI that creates the document.
+## Step 5 — Optional: Add mnemonics or lecturer comments
 
-Prepare:
+These are extras. You can skip this step and still create a reviewer.
 
-- A transcript with timestamps when possible.
-- Slide numbers or topic labels matched to the transcript.
-- The original PowerPoint or PDF for comparison.
+**Mnemonic strips** contain memory aids. **Lecturer strips** contain relevant professor comments from a transcript. These strips are experimental (beta/WIP), so inspect their accuracy and spacing carefully.
 
-Then send:
+To add mnemonics, send:
 
-> Add a lecturer strip containing only relevant comments supported by the attached transcript. Match each comment to the correct slide/topic using timestamps, slide labels, and the original slides. Keep these comments separate from the original lecture content. Do not invent comments or attribute words to the lecturer unless supported by the transcript.
+> Please add a few useful mnemonics in the designated mnemonic strips. Keep them separate from the original lecture content.
 
-For mnemonics, send:
+To add lecturer comments, first make a text transcript of the lecture audio. A timestamped transcript or one marked with slide numbers is easiest to match to the slides. You can use a transcription tool such as Gemini if audio transcription is available to you. Attach the transcript and the original slides, then send:
 
-> Add concise, clinically useful mnemonics in the designated mnemonic strips. Keep them separate from the original lecture content and label them as added study aids, not lecturer-provided material.
+> Please add relevant lecturer comments from the attached transcript. Match them to the correct slide or topic. Do not invent comments or attribute statements to the lecturer unless they appear in the transcript.
 
-Do not attribute AI-generated mnemonics to your professor. Follow your institution's rules before uploading recordings or transcripts to third-party services.
+You do not need to upload audio to the same AI that makes the reviewer. Follow your school's rules before uploading recordings or transcripts to an outside service.
 
-## Step 5 — Inspect the reviewer before sharing it
+## Step 6 — Check the reviewer before sharing it
 
-A professional-looking document can still contain omissions or formatting errors. Review it before sending it to classmates.
+A document can look professional and still contain errors. Before sending it to classmates, open the Word file and compare it with the original slides.
 
-- [ ] The lecture's major sections, definitions, mechanisms, and qualifiers are present.
-- [ ] Medical terminology, doses, numbers, abbreviations, and units match the source.
-- [ ] Important figures and tables are present and labelled correctly.
-- [ ] Tables are native Word tables when required, not just screenshots.
-- [ ] The right course shell and palette are used.
-- [ ] Two-column flow, gaps, page breaks, headers, and figure placement look correct.
-- [ ] Lecturer comments and mnemonics, if included, are supported and clearly distinguished.
-- [ ] There are exactly 20 exam questions with four choices each, plus a matching answer key and rationale table.
-- [ ] The landscape master-reference section is readable and complete.
-- [ ] The DOCX has been rendered to PDF or otherwise inspected page by page.
+- [ ] Important lecture topics and details are present.
+- [ ] Medical terms, numbers, doses, abbreviations, and units match the source.
+- [ ] Figures and table labels are correct.
+- [ ] Tables are readable and editable where expected.
+- [ ] The correct course colors and template are used.
+- [ ] There are no awkward gaps, overlapping elements, or broken page/column layouts.
+- [ ] The 20 exam questions, answer key, and rationales agree with one another.
+- [ ] The landscape master-reference section is readable.
+- [ ] The file has been checked page by page, preferably using the PDF preview too.
 
-You can request a final audit with this prompt:
+You can ask the AI to help with the final check:
 
-> Compare the reviewer with the original lecture and the matching course shell. Report missing or uncertain content, incorrect table reconstructions, missing figures, layout problems, and any questions or rationales that need review. Do not claim that a check was completed unless you actually performed it. Preserve existing correct content and make only requested fixes.
+> Check this reviewer against the original lecture. Tell me what is missing, uncertain, mislabeled, or poorly formatted. Only claim to have checked something if you actually checked it.
 
-AI validation is helpful but is not a guarantee of medical accuracy. Check high-stakes clinical details against the lecture and approved course materials.
+**For medical content, always verify clinical details against the original lecture and your approved course materials.** AI checking helps, but does not guarantee accuracy.
 
-## Step 6 — Troubleshooting and usage limits
+## What if the AI makes a mistake or runs out of usage?
 
-Sometimes an AI may run out of usage, lose a formatting instruction, split a table, misread a scan, or fail to export the DOCX. This does not automatically mean you did something wrong.
+This happens, especially on free or trial plans. Different assistants have different usage limits and reset schedules.
 
-Try these steps:
+- If only one thing is wrong, ask for that specific correction instead of regenerating the whole document.
+- Save the original PDF, latest Word file, and any PDF preview before switching tools.
+- If you reach a usage limit, try another available assistant or wait until your limit resets.
+- When starting a new chat, attach the latest files and explain what is already correct and what still needs fixing.
 
-1. **Fix one issue at a time.** Example: “Change the caption label to pink and bold, keep the caption title black, and do not change the table structure.”
-2. **Save your work before switching tools.** Keep the original lecture, the generated DOCX, any PDF preview, and the QA notes.
-3. **Try another assistant if necessary.** Grok, Claude, ChatGPT, Gemini, or another tool may be available, but document-creation, file upload, and skill support vary by plan and product.
-4. **If you hit a usage limit, check the platform's current reset/limit information.** Reset windows vary; do not rely on a fixed timetable.
-5. **When starting a new conversation, explain the status.** Say what is already correct, what remains to be fixed, and attach the latest files so the assistant does not needlessly regenerate everything.
+For example: “Fix only the spacing between these two strips. Do not change the table content or other formatting.”
 
-Narrow corrections often preserve validated content better than asking the AI to regenerate an entire reviewer.
+## Final reminder
 
-## Other reminders
+**Prepare the PDF → Load MedTrans → Attach the lecture → Copy the prompt → Choose figures → Generate → Check → Share responsibly.**
 
-1. **Always specify the course code.** MD201–MD207 use different course configurations.
-2. **Keep the original source.** OCR is a text aid, not a replacement for the lecture's visual content.
-3. **Protect course materials.** Follow your institution's and lecturer's rules before sharing lecture files, slides, recordings, or transcripts.
-4. **Keep the skill updated.** Document recurring problems so the whole class can benefit from improvements.
-5. **Be patient, but stay involved.** MedTrans can save formatting and organization time; it cannot replace reviewing the source.
-
-## The whole workflow in one line
-
-**Prepare the PDF → Run OCR if needed → Load MedTrans → Upload the lecture → Enter a prompt → Generate the DOCX → Inspect and correct → Share responsibly.**
-
-The goal is not just a beautiful file. It is a readable, editable reviewer that stays faithful to the lecture and supports learning.
+MedTrans is here to save time on organization and formatting. The original lecture remains the authority for what the reviewer says.
