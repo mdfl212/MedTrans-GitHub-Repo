@@ -17,7 +17,7 @@ The easiest beginner workflow is to use GitHub Desktop. The repository-ready ZIP
 4. Review the files in the Changes tab. Enter a commit summary such as `Add MedTrans MD201–MD207 classroom toolkit`, then commit the files to `main`.
 5. Select **Publish repository**.
 6. Choose the repository name `medtrans-md201-207` (or another name you prefer), set the visibility, and publish.
-7. Open the published repository in your browser. Check that the root `README.md` renders, the tutorial opens, and the `medtrans/` folder contains `SKILL.md`, shells, scripts, and references.
+7. Open the published repository in your browser. Check that the root `README.md` renders, the tutorial opens, and `.github/skills/medtrans/` contains `SKILL.md`, shells, scripts, and references.
 8. Share the repository URL with classmates.
 
 If GitHub Desktop says the folder is not a repository, you may have extracted the source-only ZIP instead of the GitHub Desktop-ready ZIP, or your unzip tool may have omitted the hidden `.git` directory.

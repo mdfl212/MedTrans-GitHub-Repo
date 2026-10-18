@@ -20,9 +20,11 @@
 
 The skill instructions are plain Markdown so assistants can read them. Each platform has different ways of loading skill packages:
 
-- **Skill-loader environments:** import/use the `medtrans` folder while keeping `SKILL.md`, `scripts/`, `assets/`, and `references/` together.
+- **VS Code / GitHub Copilot:** the repository installs this as a workspace skill from `.github/skills/medtrans/`. For personal installation, copy the complete `medtrans` folder from the release ZIP to `~/.copilot/skills/medtrans/`.
 - **ChatGPT chat or Project:** attach the ZIP (or extract it and attach `SKILL.md`, the course matrix, matching shell, palette, and prompt). Explicitly ask the assistant to read and follow `SKILL.md`; an upload alone is not a permanent installation.
 - **Other assistants:** provide the entire skill folder whenever possible. If ZIP inspection is unavailable, share `SKILL.md`, `COURSE_MATRIX.md`, `PROMPT_TEMPLATE.md`, matching course shell, `scripts/palettes.json`, and supporting helper files.
+
+Keep `SKILL.md`, `scripts/`, `assets/`, and `references/` together in the `medtrans` folder when copying or uploading the package.
 
 ## Safety and fidelity rules
 

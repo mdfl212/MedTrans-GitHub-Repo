@@ -33,7 +33,13 @@ These are third-party services. Check their current privacy terms and your schoo
 
 ## Step 2 — Load or install the MedTrans skill
 
-Download or clone this repository. The skill folder is [`medtrans/`](../medtrans/), and the main instruction file is [`medtrans/SKILL.md`](../medtrans/SKILL.md).
+Download or clone this repository. The VS Code workspace skill is [`.github/skills/medtrans/`](../.github/skills/medtrans/), and its main instruction file is [`.github/skills/medtrans/SKILL.md`](../.github/skills/medtrans/SKILL.md).
+
+### VS Code / GitHub Copilot
+
+To use MedTrans in this repository, open the extracted repository folder in VS Code; Copilot discovers the workspace skill at `.github/skills/medtrans/`.
+
+To install it for your user account, download `MedTrans_VSCode_Copilot_Skill.zip` from the [latest GitHub release](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest), extract it, and copy the contained `medtrans` folder to `%USERPROFILE%\.copilot\skills\`. Create the `skills` folder if it does not exist. The final path should be `%USERPROFILE%\.copilot\skills\medtrans\SKILL.md`. Restart VS Code or start a new Copilot chat after installation.
 
 ### Grok
 
