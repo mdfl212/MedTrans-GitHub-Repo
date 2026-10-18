@@ -1,6 +1,6 @@
 # MedTrans — Medical Lecture-to-Reviewer Toolkit
 
-[![Latest release](https://img.shields.io/github/v/release/mdfl212/MedTrans-GitHub-Repo?label=download)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
+[![Classroom kit v1.5.0-beta](https://img.shields.io/badge/classroom%20kit-v1.5.0--beta-176b72)](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest)
 ![Courses](https://img.shields.io/badge/courses-MD201%E2%80%93MD207-176b72)
 ![Status](https://img.shields.io/badge/status-beta-f59e0b)
 
@@ -18,7 +18,7 @@ MedTrans is a reusable AI skill and document workflow for medical students. It p
 
 **1. Read the tutorial** → **2. Download the skill** → **3. Attach your lecture and prompt the AI**
 
-[**Open the beginner tutorial**](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) · [**Get the latest release**](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest) · [Browse the source files](https://github.com/mdfl212/MedTrans-GitHub-Repo/tree/main/.github/skills/medtrans)
+[**Open the beginner tutorial**](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/) · [**Read tutorial source**](docs/TUTORIAL.md) · [**Download the classroom kit**](https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/latest) · [Browse the skill files](.github/skills/medtrans/)
 
 </div>
 
