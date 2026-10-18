@@ -24,12 +24,13 @@ If GitHub Desktop says the folder is not a repository, you may have extracted th
 
 ## Enable the tutorial website
 
-The `Deploy tutorial to GitHub Pages` workflow builds the Markdown files in `docs/` and deploys the site when changes are pushed to `main`.
+GitHub Pages can publish the tutorial directly from the repository's `docs/` folder; no Pages deployment workflow is required.
 
 1. On GitHub, open the repository's **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Push a change to `docs/` on `main`, or run the workflow from the **Actions** tab using **Run workflow**.
-4. Once the workflow succeeds, open `https://mdfl212.github.io/MedTrans-GitHub-Repo/`.
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Choose the `main` branch and `/docs` folder, then save.
+4. After GitHub finishes publishing, open `https://mdfl212.github.io/MedTrans-GitHub-Repo/`.
+5. Future changes to files in `docs/` on `main` will be published automatically.
 
 ## Alternative: use the GitHub website
 

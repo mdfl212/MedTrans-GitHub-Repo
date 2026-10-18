@@ -89,7 +89,7 @@ gh release download --repo mdfl212/MedTrans-GitHub-Repo \
 
 ## Online tutorial
 
-Read the published [MedTrans GitHub Pages tutorial](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/). The Pages site is built from `docs/` and deployed by GitHub Actions. To enable it for this repository, open **Settings → Pages** on GitHub and set the build and deployment source to **GitHub Actions**.
+Read the published [MedTrans GitHub Pages tutorial](https://mdfl212.github.io/MedTrans-GitHub-Repo/tutorial/). The Pages site is built from the `docs/` folder on the `main` branch. In the repository's **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/docs`.
 
 ## License and classroom use
 
