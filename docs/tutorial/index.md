@@ -129,6 +129,22 @@ These are extras. You can skip this step and still create a reviewer.
 
 **Mnemonic strips** contain memory aids. **Lecturer strips** contain relevant professor comments from a transcript. These strips are experimental (beta/WIP), so inspect their accuracy and spacing carefully.
 
+### What do the strips look like?
+
+Here are two examples from a MedTrans reviewer: one shows lecturer/source strips, and the other shows a lecturer strip beside a mnemonic and timing cue.
+
+<figure class="medtrans-demo-figure">
+  <img src="{{ '/assets/tutorial-media/strip-examples-side-by-side.webp' | relative_url }}" alt="Example of the separate lecturer and source strips in a reviewer" loading="lazy">
+  <figcaption>Example 1: lecturer and source notes are visually separated from the main lecture text.</figcaption>
+</figure>
+
+<figure class="medtrans-demo-figure">
+  <img src="{{ '/assets/tutorial-media/lecturer-mnemonic-strip-example.webp' | relative_url }}" alt="Example of lecturer notes and green mnemonic and timing-cue panels" loading="lazy">
+  <figcaption>Example 2: lecturer notes above a green mnemonic panel, with the timing cue included inside the green panel.</figcaption>
+</figure>
+
+**Your output may not look exactly like these screenshots.** Think of action figures made by different manufacturers: the general design may be similar, but the colors and finish can vary. Different AI tools may also change colors, fonts, borders, spacing, and table layout. The goal is to keep the content clear and the notes distinct—not to make every document look pixel-for-pixel identical.
+
 To add mnemonics, send:
 
 > Please add a few useful mnemonics in the designated mnemonic strips. Keep them separate from the original lecture content.
