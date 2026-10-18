@@ -48,7 +48,7 @@ Choose the AI assistant you want to use. Menus can look a little different depen
 4. In the chat, type `/medtrans` if the skill command is available.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/assets/tutorial-media/grok-skill-setup.webp' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Grok" loading="lazy">
+  <img src="{{ '/tutorial/tutorial-media/easy-to-use/grok-skill-setup-original.gif' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Grok" loading="lazy">
   <figcaption>Example setup in Grok. Your menu may look a little different.</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Choose the AI assistant you want to use. Menus can look a little different depen
 4. In the chat, type `/medtrans` if available. Otherwise, simply tell Claude to use the MedTrans skill.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/assets/tutorial-media/claude-skill-setup.webp' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Claude" loading="lazy">
+  <img src="{{ '/tutorial/tutorial-media/easy-to-use/claude-skill-setup-original.gif' | relative_url }}" alt="Animated example showing the MedTrans skill setup process in Claude" loading="lazy">
   <figcaption>Example setup in Claude. Available options can vary by account.</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ If your ChatGPT account has a **Skills** feature, open it and use the option to 
 If you are using a regular chat without that feature, attach the MedTrans package and ask ChatGPT to follow it. If it cannot read the ZIP, extract it and attach `SKILL.md` plus the shell and palette for your course. Uploading files into a regular chat does not permanently install a skill.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/assets/tutorial-media/chatgpt-skill-setup.webp' | relative_url }}" alt="Animated example showing the MedTrans package being added in ChatGPT" loading="lazy">
+  <img src="{{ '/tutorial/tutorial-media/easy-to-use/chatgpt-skill-setup-original.gif' | relative_url }}" alt="Animated example showing the MedTrans package being added in ChatGPT" loading="lazy">
   <figcaption>Example using ChatGPT. The exact interface depends on which features your account has.</figcaption>
 </figure>
 
@@ -110,7 +110,7 @@ If you already know which figures you want, you can put that choice directly in 
 After you send the prompt and answer the figure question, let the AI work. It may take a while because the reviewer can include tables, figures, exam questions, rationales, and a landscape reference section.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/assets/tutorial-media/finished-reviewer-demo.webp' | relative_url }}" alt="Animated preview of a finished MedTrans reviewer made with Grok" loading="lazy">
+  <img src="{{ '/tutorial/tutorial-media/easy-to-use/finished-reviewer-demo-original.gif' | relative_url }}" alt="Animated preview of a finished MedTrans reviewer made with Grok" loading="lazy">
   <figcaption>Example of a finished reviewer. Your own document will depend on the lecture and AI platform you use.</figcaption>
 </figure>
 
@@ -134,12 +134,12 @@ These are extras. You can skip this step and still create a reviewer.
 Here are two examples from a MedTrans reviewer: one shows lecturer/source strips, and the other shows a lecturer strip beside a mnemonic and timing cue.
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/assets/tutorial-media/strip-examples-side-by-side.webp' | relative_url }}" alt="Example of the separate lecturer and source strips in a reviewer" loading="lazy">
+  <img src="{{ '/tutorial/tutorial-media/easy-to-use/strip-examples-side-by-side-original.webp' | relative_url }}" alt="Example of the separate lecturer and source strips in a reviewer" loading="lazy">
   <figcaption>Example 1: lecturer and source notes are visually separated from the main lecture text.</figcaption>
 </figure>
 
 <figure class="medtrans-demo-figure">
-  <img src="{{ '/assets/tutorial-media/lecturer-mnemonic-strip-example.webp' | relative_url }}" alt="Example of lecturer notes and green mnemonic and timing-cue panels" loading="lazy">
+  <img src="{{ '/tutorial/tutorial-media/easy-to-use/lecturer-mnemonic-strip-example-original.webp' | relative_url }}" alt="Example of lecturer notes and green mnemonic and timing-cue panels" loading="lazy">
   <figcaption>Example 2: lecturer notes above a green mnemonic panel, with the timing cue included inside the green panel.</figcaption>
 </figure>
 
