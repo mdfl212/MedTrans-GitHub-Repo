@@ -10,7 +10,9 @@ This guide is for **absolute beginners**. You do not need to know how to code. J
 **Prepare your lecture PDF → Load MedTrans → Copy the prompt → Answer the figure question → Check your reviewer.**
 
 
-## 💬 Quick FAQs — read this before you worry!
+<section class="medtrans-faq-section medtrans-faq-tutorial" id="medtrans-faqs" markdown="1">
+
+## 💬 First time trying MedTrans? You’ve got this!
 
 If you're unsure whether MedTrans will work for you, that's completely normal. **You do not need to know how to code, and you can start with just one lecture.**
 
@@ -63,6 +65,8 @@ If you're unsure whether MedTrans will work for you, that's completely normal. *
 </details>
 
 **You don't have to get everything perfect on the first try.** Start with one lecture, follow the guide, and check the result. The original lecture remains the authority for medical content.
+
+</section>
 
 ## Step 1 — Prepare your lecture PDF
 
