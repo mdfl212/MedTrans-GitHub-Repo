@@ -12,12 +12,15 @@ permalink: /
   <p class="medtrans-actions">
     <a class="medtrans-button medtrans-button-primary" href="{{ '/tutorial/' | relative_url }}">Read the beginner tutorial</a>
     <a class="medtrans-button medtrans-button-secondary" href="https://github.com/mdfl212/MedTrans-GitHub-Repo/releases/download/init/MedTrans_v1.5.0.zip">Get the MedTrans skill</a>
+    <a class="medtrans-button medtrans-button-faq" href="#medtrans-faqs">New here? Read the FAQs ↓</a>
   </p>
   <p class="medtrans-release-link">Prefer a video? <a href="https://youtu.be/8d1QEsNEGH4">Watch the earlier MedTrans skill tutorial on YouTube</a>. More files and versions are available in the <a href="https://github.com/mdfl212/MedTrans-GitHub-Repo">GitHub repository</a>.</p>
 </section>
 
 
-## 💡 Worried about trying MedTrans? Start with these FAQs
+<section class="medtrans-faq-section" id="medtrans-faqs" markdown="1">
+
+## 💡 New to MedTrans? Start here.
 
 You **do not need to be technical** to try MedTrans. These are common questions students ask before getting started.
 
@@ -58,6 +61,8 @@ You **do not need to be technical** to try MedTrans. These are common questions 
 </details>
 
 **Still unsure?** Open the [beginner tutorial]({{ '/tutorial/' | relative_url }}) and follow it one step at a time. You can start with one lecture and see how it goes.
+
+</section>
 
 ## Start here
 
