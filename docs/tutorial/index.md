@@ -9,6 +9,61 @@ This guide is for **absolute beginners**. You do not need to know how to code. J
 
 **Prepare your lecture PDF → Load MedTrans → Copy the prompt → Answer the figure question → Check your reviewer.**
 
+
+## 💬 Quick FAQs — read this before you worry!
+
+If you're unsure whether MedTrans will work for you, that's completely normal. **You do not need to know how to code, and you can start with just one lecture.**
+
+<details>
+  <summary><strong>Can I set it up on my laptop and use it later on my iPad or phone?</strong></summary>
+
+  Often, yes—but it depends on the AI assistant. If you use the same account, an installed skill may be available on other devices when that platform syncs it. If it is not there, download the MedTrans package on the second device and add it there, or attach the needed MedTrans files to your new chat. Your lecture PDF must also be accessible from that device.
+</details>
+
+<details>
+  <summary><strong>If I upload MedTrans on my laptop, will it automatically be available everywhere?</strong></summary>
+
+  **Not necessarily.** A skill installed through a platform's Skills feature may sync with your account, but files attached to a regular chat may only be available in that chat. If you switch devices or start a new chat and the assistant cannot find MedTrans, attach the package or required files again.
+</details>
+
+<details>
+  <summary><strong>Do I need to know coding or understand every file in the ZIP?</strong></summary>
+
+  **No.** The package contains instructions and course-specific files for the AI to use. Start with the steps on this page and copy the short prompt in Step 3. You do not need to edit the files just to try the basic workflow.
+</details>
+
+<details>
+  <summary><strong>Will MedTrans work exactly the same on ChatGPT, Claude, and Grok?</strong></summary>
+
+  The overall workflow is similar, but setup menus and supported skill features differ by platform, account, and plan. Use the section for your AI assistant above. If there is no skill installer, you may be able to attach the instructions and course files instead; a regular chat upload is not the same as permanently installing a skill.
+</details>
+
+<details>
+  <summary><strong>Will it overwrite my lecture PDF?</strong></summary>
+
+  The workflow is intended to create a separate editable Word reviewer. Keep the original lecture PDF and save the generated DOCX separately. Review the finished document against the source before using or sharing it.
+</details>
+
+<details>
+  <summary><strong>Is it free, and will I run out of AI usage?</strong></summary>
+
+  You can download the MedTrans package here, but the AI assistant you use may have its own plan requirements and usage limits. Long lectures and complex documents can use more of your available allowance. If you hit a limit, save your files and continue when your usage resets or try another assistant you have access to.
+</details>
+
+<details>
+  <summary><strong>What if my reviewer looks different from the examples?</strong></summary>
+
+  That's okay. Different AI tools can vary in colors, fonts, spacing, tables, and page layout. Check that the lecture content is accurate, important details are present, and the document is readable. The examples are guides—not a guarantee of pixel-perfect matching.
+</details>
+
+<details>
+  <summary><strong>What if something goes wrong?</strong></summary>
+
+  You can ask the AI to fix one specific issue at a time. Save your original PDF and latest DOCX first, then give a focused instruction such as: “Fix only the spacing in this section. Do not change the content or other formatting.” Always verify medical details against your original lecture and approved course materials.
+</details>
+
+**You don't have to get everything perfect on the first try.** Start with one lecture, follow the guide, and check the result. The original lecture remains the authority for medical content.
+
 ## Step 1 — Prepare your lecture PDF
 
 Start with your professor's lecture slides, usually saved as a PDF.
